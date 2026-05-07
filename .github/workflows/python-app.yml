@@ -1,0 +1,22 @@
+name: Testowanie mojego skryptu
+
+on:
+  push:
+    branches: [ "main" ] # Uruchom, gdy wyślesz coś do głównej gałęzi
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4 # Pobiera Twój kod na serwer GitHub
+
+    - name: Ustawienie Pythona
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.10"
+
+    - name: Uruchomienie skryptu
+      run: python main.py # Tutaj wpisujemy nazwę Twojego pliku
