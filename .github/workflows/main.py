@@ -1,4 +1,4 @@
-print("oto jakieś zadanie z użyciem pythona")
+print("oto jakieś zadanie które zrobiłem z użyciem pythona")
 name = "name: A8 \n"
 brand = "brand: Audi\n"
 age = "Age: 12\n"
